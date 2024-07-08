@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: notification-service
+#  RabbitMq config
+  rabbitmq:
+    host: 172.19.0.3
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: core
+#  Mail config
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: bao2002pytn.aws@gmail.com
+    password: uidmandgfjcpewbu
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+
+
+
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka
+
+server:
+  port: 9003
+
